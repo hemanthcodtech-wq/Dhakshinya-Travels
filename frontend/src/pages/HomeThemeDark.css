@@ -1,0 +1,406 @@
+/* ==========================================================================
+   HOMEPAGE OBSIDIAN BLACK & METALLIC GOLD THEME OVERRIDE
+   Transforms all white/pale sections into luxury dark glass & gold cards
+   Matching Fleet, About, Contact and Policy pages perfectly
+   ========================================================================== */
+
+/* Main Page Container */
+.home-page-obsidian {
+  background: radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.08) 0%, rgba(10, 10, 10, 0.98) 60%, #050505 100%), #0a0a0a !important;
+  color: #ffffff !important;
+  overflow-x: clip;
+  width: 100%;
+}
+
+/* Base Headings & Eyebrows across all Home sections */
+.home-page-obsidian .section-heading h2,
+.home-page-obsidian .services-header-container h2,
+.home-page-obsidian .how-it-works-header h2,
+.home-page-obsidian .home-cta h2 {
+  color: #ffffff !important;
+  font-weight: 900 !important;
+}
+
+.home-page-obsidian .section-heading h2 span,
+.home-page-obsidian .services-header-container h2 span,
+.home-page-obsidian .how-it-works-header h2 span {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.home-page-obsidian .section-heading .eyebrow,
+.home-page-obsidian .services-eyebrow-badge,
+.home-page-obsidian .how-it-works-badge,
+.home-page-obsidian .home-cta .eyebrow {
+  color: #fbbf24 !important;
+  letter-spacing: 0.12em !important;
+  font-weight: 800 !important;
+}
+
+.home-page-obsidian .section-heading > p,
+.home-page-obsidian .services-header-container > p,
+.home-page-obsidian .how-it-works-header > p {
+  color: #94a3b8 !important;
+}
+
+.home-page-obsidian .all-link {
+  color: #fbbf24 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  font-weight: 800 !important;
+  font-size: 13px !important;
+  transition: all 0.25s ease !important;
+}
+
+.home-page-obsidian .all-link:hover {
+  color: #fef08a !important;
+  transform: translateX(4px) !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   1. OVERRIDE WHITE & PALE BACKGROUND SECTIONS
+   ───────────────────────────────────────────────────────────────────────── */
+.home-page-obsidian .section,
+.home-page-obsidian .section.pale,
+.home-page-obsidian .home-showcase,
+.home-page-obsidian .destinations-preview,
+.home-page-obsidian .services-section-wrapper,
+.home-page-obsidian .map-section {
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+.home-page-obsidian .services-section-wrapper {
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.95) 0%, rgba(18, 18, 18, 0.98) 50%, rgba(10, 10, 10, 0.95) 100%) !important;
+  border-top: 1px solid rgba(245, 158, 11, 0.18) !important;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.18) !important;
+}
+
+.home-page-obsidian .services-section-backdrop {
+  opacity: 0.12 !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   2. SLIDER CARDS (Outstation Cabs, Destinations, Packages, Vehicles)
+   ───────────────────────────────────────────────────────────────────────── */
+.home-page-obsidian .home-slide-card {
+  background: linear-gradient(165deg, rgba(26, 26, 26, 0.95) 0%, rgba(13, 13, 13, 0.98) 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.22) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6) !important;
+  color: #ffffff !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.home-page-obsidian .home-slide-card:hover {
+  transform: translateY(-7px) !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8), 0 0 25px rgba(245, 158, 11, 0.22) !important;
+}
+
+.home-page-obsidian .home-slide-card h3 {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+}
+
+.home-page-obsidian .home-slide-card p {
+  color: #94a3b8 !important;
+}
+
+.home-page-obsidian .home-slide-card .card-body {
+  background: transparent !important;
+}
+
+.home-page-obsidian .home-slide-card .category-tag {
+  background: rgba(245, 158, 11, 0.12) !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  color: #fbbf24 !important;
+}
+
+.home-page-obsidian .home-slide-card .price-tag,
+.home-page-obsidian .home-slide-card .price-badge-overlay,
+.home-page-obsidian .home-slide-card .route-badge,
+.home-page-obsidian .home-slide-card .duration-badge {
+  background: rgba(0, 0, 0, 0.85) !important;
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  color: #fbbf24 !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+/* Package Route Pill - High Contrast Black / Dark Glass */
+.home-page-obsidian .package-route-pill {
+  background: #0a0a0a !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  color: #e2e8f0 !important;
+  font-weight: 600 !important;
+  font-size: 0.84rem !important;
+  line-height: 1.55 !important;
+  padding: 8px 12px !important;
+  border-radius: 10px !important;
+  margin-bottom: 16px !important;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+}
+
+.home-page-obsidian .home-slide-card:hover .package-route-pill {
+  border-color: rgba(245, 158, 11, 0.6) !important;
+  color: #ffffff !important;
+}
+
+.home-page-obsidian .card-action-btn {
+  color: #fbbf24 !important;
+  font-weight: 800 !important;
+}
+
+.home-page-obsidian .card-action-btn:hover {
+  color: #fef08a !important;
+}
+
+/* Vehicle Home Cards */
+.home-page-obsidian .vehicle-card .vehicle-image-bg {
+  background: radial-gradient(circle at 50% 50%, #262626 0%, #121212 100%) !important;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.18) !important;
+}
+
+.home-page-obsidian .vehicle-rates-box {
+  background: rgba(0, 0, 0, 0.45) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.home-page-obsidian .vehicle-rate-item small {
+  color: #94a3b8 !important;
+}
+
+.home-page-obsidian .vehicle-rate-item strong {
+  color: #fbbf24 !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   3. OUR TAXI & PACKAGE SERVICES (6 GLASS CARDS)
+   ───────────────────────────────────────────────────────────────────────── */
+.home-page-obsidian .service-glass-card {
+  background: linear-gradient(165deg, #181818 0%, #101010 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.28) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  transition: all 0.35s ease !important;
+}
+
+.home-page-obsidian .service-glass-card:hover {
+  transform: translateY(-6px) !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 24px rgba(245, 158, 11, 0.3) !important;
+}
+
+.home-page-obsidian .service-icon-box {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(217, 119, 6, 0.3) 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.5) !important;
+  color: #fbbf24 !important;
+}
+
+.home-page-obsidian .service-glass-card:hover .service-icon-box {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+  color: #000000 !important;
+  border-color: #fbbf24 !important;
+}
+
+.home-page-obsidian .service-index-number {
+  color: rgba(245, 158, 11, 0.45) !important;
+  font-weight: 900 !important;
+}
+
+.home-page-obsidian .service-card-content h3 {
+  color: #ffffff !important;
+  font-size: 1.32rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 0.65rem !important;
+}
+
+.home-page-obsidian .service-card-content p {
+  color: #e2e8f0 !important;
+  font-size: 0.96rem !important;
+  line-height: 1.65 !important;
+  font-weight: 450 !important;
+}
+
+/* Explore Button default & hover states with crystal clear contrast */
+.home-page-obsidian .service-explore-btn {
+  background: rgba(245, 158, 11, 0.12) !important;
+  color: #fbbf24 !important;
+  border: 1px solid rgba(245, 158, 11, 0.45) !important;
+  font-weight: 800 !important;
+  border-radius: 50px !important;
+  padding: 0.65rem 1.4rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  transition: all 0.25s ease !important;
+  text-decoration: none !important;
+}
+
+.home-page-obsidian .service-explore-btn:hover,
+.home-page-obsidian .service-glass-card:hover .service-explore-btn {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%) !important;
+  color: #000000 !important;
+  border-color: #fbbf24 !important;
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.45) !important;
+  font-weight: 900 !important;
+}
+
+.home-page-obsidian .service-glass-card:hover .service-explore-btn svg,
+.home-page-obsidian .service-explore-btn:hover svg {
+  color: #000000 !important;
+  fill: #000000 !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   4. HOW IT WORKS 4 STEPS SECTION
+   ───────────────────────────────────────────────────────────────────────── */
+.home-page-obsidian .how-it-works-section {
+  background: linear-gradient(180deg, #0a0a0a 0%, #121212 50%, #0a0a0a 100%) !important;
+  border-top: 1px solid rgba(245, 158, 11, 0.18) !important;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.18) !important;
+}
+
+.home-page-obsidian .how-step-card {
+  background: linear-gradient(165deg, rgba(26, 26, 26, 0.95) 0%, rgba(13, 13, 13, 0.98) 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.25) !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6) !important;
+}
+
+.home-page-obsidian .how-step-card:hover {
+  border-color: #f59e0b !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8), 0 0 25px rgba(245, 158, 11, 0.25) !important;
+}
+
+.home-page-obsidian .how-step-card h3 {
+  color: #ffffff !important;
+}
+
+.home-page-obsidian .how-step-card p {
+  color: #94a3b8 !important;
+}
+
+.home-page-obsidian .how-chip {
+  background: rgba(245, 158, 11, 0.1) !important;
+  border: 1px solid rgba(245, 158, 11, 0.28) !important;
+  color: #fbbf24 !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   5. PILGRIM FEEDBACK & TESTIMONIALS
+   ───────────────────────────────────────────────────────────────────────── */
+.home-page-obsidian .home-reviews-grid > div {
+  background: linear-gradient(165deg, rgba(26, 26, 26, 0.9) 0%, rgba(13, 13, 13, 0.95) 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.25) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6) !important;
+  transition: all 0.3s ease !important;
+}
+
+.home-page-obsidian .home-reviews-grid > div:hover {
+  transform: translateY(-5px) !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8), 0 0 20px rgba(245, 158, 11, 0.2) !important;
+}
+
+.home-page-obsidian .home-reviews-grid p {
+  color: #cbd5e1 !important;
+}
+
+.home-page-obsidian .home-reviews-grid strong {
+  color: #ffffff !important;
+}
+
+.home-page-obsidian .home-reviews-grid span {
+  color: #94a3b8 !important;
+}
+
+.home-page-obsidian .home-reviews-grid div[style*="borderTop"] {
+  border-top-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   6. FREQUENTLY ASKED QUESTIONS (ACCORDION)
+   ───────────────────────────────────────────────────────────────────────── */
+.home-page-obsidian div[style*="maxWidth: 850"] > div {
+  background: linear-gradient(165deg, rgba(26, 26, 26, 0.92) 0%, rgba(13, 13, 13, 0.96) 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.25) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
+  transition: all 0.25s ease !important;
+}
+
+.home-page-obsidian div[style*="maxWidth: 850"] > div:hover {
+  border-color: #f59e0b !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), 0 0 18px rgba(245, 158, 11, 0.15) !important;
+}
+
+.home-page-obsidian div[style*="maxWidth: 850"] h3 {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+}
+
+.home-page-obsidian div[style*="maxWidth: 850"] p {
+  color: #94a3b8 !important;
+  line-height: 1.7 !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   7. GOOGLE MAPS SECTION
+   ───────────────────────────────────────────────────────────────────────── */
+.home-page-obsidian .map-section {
+  padding: clamp(3rem, 6vw, 5rem) clamp(16px, 5vw, 60px) !important;
+}
+
+.home-page-obsidian .map-card {
+  border: 1.5px solid rgba(245, 158, 11, 0.35) !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.7) !important;
+  background: #000000 !important;
+}
+
+.home-page-obsidian .map-card iframe {
+  filter: contrast(1.05) saturate(1.1) !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   8. BOTTOM CALL TO ACTION
+   ───────────────────────────────────────────────────────────────────────── */
+.home-page-obsidian .home-cta {
+  background: radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.15) 0%, rgba(10, 10, 10, 0.98) 75%), #050505 !important;
+  border-top: 2px solid #f59e0b !important;
+  color: #ffffff !important;
+  box-shadow: inset 0 20px 40px rgba(0, 0, 0, 0.8) !important;
+}
+
+.home-page-obsidian .home-cta em {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-style: normal !important;
+}
+
+.home-page-obsidian .home-cta p {
+  color: #cbd5e1 !important;
+}
+
+.home-page-obsidian .home-cta .button {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  color: #000000 !important;
+  font-weight: 900 !important;
+  border: none !important;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4) !important;
+  border-radius: 12px !important;
+  padding: 14px 28px !important;
+  font-size: 14px !important;
+}
+
+.home-page-obsidian .home-cta .button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.6) !important;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+}
+

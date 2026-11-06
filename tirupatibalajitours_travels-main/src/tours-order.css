@@ -1,4 +1,0 @@
-/* Keep the tour hero/banner at the end of the Tours page on all screen sizes. */
-.tours-page-wrapper > .tours-hero-card {
-  order: 99;
-}

@@ -1,14 +1,16 @@
 import { Router } from 'express';
 import {
-  initiatePayment,
-  handleEasebuzzCallback,
-  getAllPayments,
+  createRazorpayOrder,
+  verifyRazorpayPayment,
+  getAllPayments
 } from '../controllers/paymentController.js';
 
 const router = Router();
 
-router.post('/initiate', initiatePayment);
-router.all('/callback', handleEasebuzzCallback);
+// Official Razorpay endpoints
+router.post('/initiate', createRazorpayOrder);
+router.post('/create-order', createRazorpayOrder);
+router.post('/verify', verifyRazorpayPayment);
 router.get('/', getAllPayments);
 
 export default router;

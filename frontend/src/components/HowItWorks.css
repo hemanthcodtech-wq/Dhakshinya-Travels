@@ -1,0 +1,280 @@
+/* --- 4-STEP HOW IT WORKS SECTION (DHAKSHINYA LUXURY DARK & GOLD) --- */
+
+.how-it-works-section {
+  position: relative;
+  background: radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.08) 0%, rgba(10, 10, 10, 0.98) 55%, #050505 100%), #0a0a0a !important;
+  padding: clamp(60px, 8vw, 100px) 1.5rem !important;
+  color: #ffffff;
+  overflow: hidden;
+  border-top: 1px solid rgba(245, 158, 11, 0.15);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.15);
+}
+
+.how-it-works-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #f59e0b, transparent);
+  opacity: 0.7;
+}
+
+.how-it-works-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto clamp(40px, 5vw, 60px) auto;
+  position: relative;
+  z-index: 2;
+}
+
+.how-it-works-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fbbf24;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+}
+
+.how-it-works-title {
+  font-size: clamp(1.85rem, 3.5vw, 2.75rem);
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+
+.how-it-works-title span {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.how-it-works-subtitle {
+  font-size: clamp(0.92rem, 1.3vw, 1.05rem);
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+/* Steps Grid Container */
+.how-it-works-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Connecting line across steps (desktop only) */
+@media (min-width: 1025px) {
+  .how-it-works-grid::before {
+    content: '';
+    position: absolute;
+    top: 68px;
+    left: 8%;
+    right: 8%;
+    height: 2px;
+    background: linear-gradient(90deg, 
+      rgba(245, 158, 11, 0.1) 0%, 
+      rgba(245, 158, 11, 0.45) 25%, 
+      rgba(245, 158, 11, 0.6) 50%, 
+      rgba(245, 158, 11, 0.45) 75%, 
+      rgba(245, 158, 11, 0.1) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+/* Individual Step Card */
+.how-it-works-card {
+  position: relative;
+  background: linear-gradient(165deg, rgba(26, 26, 26, 0.85) 0%, rgba(13, 13, 13, 0.95) 100%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 32px 22px 28px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  overflow: hidden;
+}
+
+.how-it-works-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #f59e0b, transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.how-it-works-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(245, 158, 11, 0.45);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(245, 158, 11, 0.18);
+}
+
+.how-it-works-card:hover::after {
+  opacity: 1;
+}
+
+/* Top Step Number Indicator */
+.how-it-works-num-wrap {
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 3;
+}
+
+.how-it-works-icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1f1f1f 0%, #0d0d0d 100%);
+  border: 2px solid rgba(245, 158, 11, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), inset 0 0 12px rgba(245, 158, 11, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f59e0b;
+  font-size: 1.65rem;
+  transition: all 0.35s ease;
+}
+
+.how-it-works-card:hover .how-it-works-icon-circle {
+  border-color: #fbbf24;
+  color: #fbbf24;
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.35), inset 0 0 15px rgba(245, 158, 11, 0.3);
+}
+
+.how-it-works-step-pill {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%);
+  color: #000000;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Content Elements */
+.how-it-works-heading {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  line-height: 1.35;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-it-works-desc {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0 0 18px 0;
+  flex: 1;
+}
+
+/* Action Pill / Mini Meta */
+.how-it-works-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.22);
+  padding: 5px 12px;
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+}
+
+.how-it-works-card:hover .how-it-works-meta {
+  background: rgba(245, 158, 11, 0.18);
+  border-color: rgba(245, 158, 11, 0.45);
+  color: #fef08a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .how-it-works-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .how-it-works-section {
+    padding: 48px 1rem !important;
+  }
+
+  .how-it-works-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 440px;
+  }
+
+  .how-it-works-card {
+    padding: 24px 18px 20px 18px;
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .how-it-works-num-wrap {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .how-it-works-icon-circle {
+    width: 54px;
+    height: 54px;
+    font-size: 1.35rem;
+  }
+
+  .how-it-works-heading {
+    min-height: auto;
+    justify-content: flex-start;
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+  }
+
+  .how-it-works-desc {
+    font-size: 0.82rem;
+    margin-bottom: 12px;
+  }
+}
+

@@ -1,0 +1,368 @@
+/* ==========================================================================
+   FLEET CARD & RATES OVERRIDES - OBSIDIAN & METALLIC GOLD CONTRAST
+   ========================================================================== */
+
+.rental-card {
+  min-width: 0 !important;
+  max-width: none !important;
+  background: linear-gradient(165deg, #181818 0%, #0d0d0d 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.28) !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  color: #ffffff !important;
+}
+
+.rental-card:hover {
+  transform: translateY(-7px) !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8), 0 0 25px rgba(245, 158, 11, 0.22) !important;
+}
+
+/* Vehicle Media Box */
+.vehicle-media {
+  height: 230px !important;
+  position: relative !important;
+  background: radial-gradient(circle at 50% 50%, #262626 0%, #121212 100%) !important;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.22) !important;
+}
+
+.vehicle-media img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  padding: 14px !important;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.85)) !important;
+}
+
+.media-type {
+  position: absolute !important;
+  top: 14px !important;
+  left: 14px !important;
+  background: rgba(0, 0, 0, 0.82) !important;
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  color: #fbbf24 !important;
+  border-radius: 9999px !important;
+  padding: 5px 12px !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+.media-bottom {
+  position: absolute !important;
+  left: 14px !important;
+  right: 14px !important;
+  bottom: 14px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.media-rate {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  color: #000000 !important;
+  border-radius: 10px !important;
+  padding: 6px 14px !important;
+  font-size: 0.95rem !important;
+  font-weight: 900 !important;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4) !important;
+}
+
+.media-seats {
+  background: rgba(0, 0, 0, 0.82) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+  padding: 6px 11px !important;
+  font-size: 0.8rem !important;
+  font-weight: 800 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+}
+
+.media-seats svg {
+  color: #fbbf24 !important;
+}
+
+/* Card Body Content */
+.rental-info {
+  padding: 22px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  background: transparent !important;
+  flex: 1 !important;
+}
+
+.vehicle-heading {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  margin-bottom: 6px !important;
+}
+
+.vehicle-category {
+  font-size: 0.72rem !important;
+  letter-spacing: 0.12em !important;
+  color: #fbbf24 !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+}
+
+.rental-info h3 {
+  font-size: 1.28rem !important;
+  color: #ffffff !important;
+  font-weight: 900 !important;
+  margin: 4px 0 0 0 !important;
+  line-height: 1.25 !important;
+}
+
+.vehicle-capacity {
+  background: rgba(245, 158, 11, 0.14) !important;
+  border: 1px solid rgba(245, 158, 11, 0.35) !important;
+  color: #fbbf24 !important;
+  border-radius: 8px !important;
+  padding: 4px 9px !important;
+  font-size: 0.75rem !important;
+  font-weight: 800 !important;
+  white-space: nowrap !important;
+}
+
+.vehicle-summary {
+  font-size: 0.88rem !important;
+  color: #94a3b8 !important;
+  line-height: 1.55 !important;
+  margin: 8px 0 16px 0 !important;
+  min-height: 40px !important;
+}
+
+/* Feature tags */
+.vehicle-features {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin-bottom: 16px !important;
+}
+
+.vehicle-features span {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
+  padding: 6px 10px !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  color: #e2e8f0 !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.vehicle-features svg {
+  color: #f59e0b !important;
+}
+
+.vehicle-minimum {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  font-size: 0.78rem !important;
+  color: #fbbf24 !important;
+  margin: 8px 0 16px 0 !important;
+  font-weight: 600 !important;
+}
+
+.vehicle-minimum svg {
+  color: #f59e0b !important;
+}
+
+/* Buttons */
+.rent-actions {
+  display: flex !important;
+  gap: 10px !important;
+  margin-top: auto !important;
+}
+
+.rent-actions .button.wa-btn {
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.18) 0%, rgba(22, 163, 74, 0.25) 100%) !important;
+  border: 1.5px solid #25d366 !important;
+  color: #4ade80 !important;
+  font-weight: 800 !important;
+  border-radius: 12px !important;
+  padding: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  font-size: 0.88rem !important;
+  transition: all 0.25s ease !important;
+}
+
+.rent-actions .button.wa-btn:hover {
+  background: #25d366 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45) !important;
+}
+
+.rent-actions .button.pay-btn {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  border: none !important;
+  color: #000000 !important;
+  font-weight: 900 !important;
+  border-radius: 12px !important;
+  padding: 12px !important;
+  font-size: 0.88rem !important;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35) !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.25s ease !important;
+}
+
+.rent-actions .button.pay-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5) !important;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+}
+
+/* ==========================================================================
+   FLEET STARTING TARIFF STRIP - LUXURY OBSIDIAN & METALLIC GOLD
+   ========================================================================== */
+.fleet-pricing-strip {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 16px !important;
+  margin: 18px 0 32px 0 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.fleet-strip-card {
+  position: relative !important;
+  background: linear-gradient(160deg, #181818 0%, #0d0d0d 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.28) !important;
+  border-radius: 18px !important;
+  padding: 22px 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  overflow: hidden !important;
+}
+
+.fleet-strip-card:hover {
+  transform: translateY(-4px) !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.75), 0 0 20px rgba(245, 158, 11, 0.2) !important;
+}
+
+.fleet-strip-card.featured {
+  background: linear-gradient(160deg, #221c12 0%, #110e08 100%) !important;
+  border: 1.5px solid #f59e0b !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 25px rgba(245, 158, 11, 0.18) !important;
+}
+
+.strip-highlight-tag {
+  position: absolute !important;
+  top: 12px !important;
+  right: 14px !important;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  color: #000000 !important;
+  font-size: 0.62rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.08em !important;
+  padding: 3px 8px !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4) !important;
+}
+
+.fleet-strip-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  color: #fbbf24 !important;
+  font-size: 0.76rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 6px !important;
+}
+
+.fleet-strip-badge .gold-icon {
+  color: #f59e0b !important;
+  flex-shrink: 0 !important;
+}
+
+.fleet-strip-meta {
+  color: #a3a3a3 !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  margin-bottom: 14px !important;
+}
+
+.fleet-strip-price {
+  display: flex !important;
+  align-items: baseline !important;
+  gap: 8px !important;
+  margin-bottom: 14px !important;
+}
+
+.fleet-strip-price .from-txt {
+  color: #737373 !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+}
+
+.fleet-strip-price .amount {
+  color: #ffffff !important;
+  font-size: 1.65rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1 !important;
+}
+
+.fleet-strip-price .amount.gold-gradient-text {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.fleet-strip-perk {
+  display: flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  padding-top: 12px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #d4d4d4 !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  margin-top: auto !important;
+}
+
+.fleet-strip-perk .check-icon {
+  color: #22c55e !important;
+  flex-shrink: 0 !important;
+}
+
+@media (max-width: 900px) {
+  .fleet-pricing-strip {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .fleet-strip-card {
+    padding: 16px 18px !important;
+  }
+
+  .fleet-strip-price .amount {
+    font-size: 1.45rem !important;
+  }
+}

@@ -1,0 +1,473 @@
+/* ==========================================================================
+   BLOG THEME DARK - OBSIDIAN BLACK & METALLIC GOLD OVERRIDES
+   ========================================================================== */
+
+/* Main Page Wrappers */
+body:has(.blog-social-wrapper),
+body:has(.single-blog-page-wrapper) {
+  background-color: #080808 !important;
+}
+
+.blog-social-wrapper {
+  background: transparent !important;
+}
+
+/* Controls Card (Search + Category Filter Tabs) */
+.blog-controls-card {
+  background: linear-gradient(165deg, #181818 0%, #101010 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.28) !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6) !important;
+}
+
+.blog-search-input-box input {
+  background: #0a0a0a !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  color: #ffffff !important;
+}
+
+.blog-search-input-box input::placeholder {
+  color: #64748b !important;
+}
+
+.category-filter-btn {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #94a3b8 !important;
+}
+
+.category-filter-btn:hover {
+  border-color: rgba(245, 158, 11, 0.5) !important;
+  color: #ffffff !important;
+}
+
+.category-filter-btn.active {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%) !important;
+  color: #000000 !important;
+  border-color: #fbbf24 !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35) !important;
+}
+
+.category-filter-btn.active .cat-count {
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: #000000 !important;
+}
+
+/* Blog Cards */
+.blog-feed-card,
+.blog-card,
+.pinned-post-card,
+.social-post-card,
+.comment-feed-card,
+.pinned-widget-card,
+.trending-topics-widget,
+.sidebar-sticky-box {
+  background: linear-gradient(165deg, #181818 0%, #101010 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.25) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+  color: #ffffff !important;
+}
+
+.social-post-header {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.social-post-card:hover,
+.blog-feed-card:hover,
+.blog-card:hover,
+.pinned-post-card:hover,
+.comment-feed-card:hover {
+  transform: translateY(-5px) !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.8), 0 0 20px rgba(245, 158, 11, 0.2) !important;
+}
+
+.social-post-card h2 a,
+.social-post-card h3 a,
+.blog-feed-card h2,
+.blog-feed-card h3,
+.blog-card h3,
+.pinned-post-card h2 {
+  color: #ffffff !important;
+}
+
+.social-post-card h2 a:hover {
+  color: #fbbf24 !important;
+}
+
+.post-author-name {
+  color: #ffffff !important;
+}
+
+.post-time-meta {
+  color: #94a3b8 !important;
+}
+
+.post-cat-chip,
+.post-readtime-chip {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  color: #fbbf24 !important;
+}
+
+.post-snippet-text,
+.blog-feed-card p,
+.blog-card p,
+.pinned-post-card p {
+  color: #cbd5e1 !important;
+  line-height: 1.7 !important;
+}
+
+.social-highlights-list {
+  background: #0a0a0a !important;
+  border: 1px solid rgba(245, 158, 11, 0.25) !important;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.7) !important;
+}
+
+.social-hl-item {
+  color: #e2e8f0 !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+}
+
+.social-hl-item strong {
+  color: #fbbf24 !important;
+}
+
+.social-hl-item .hl-check {
+  color: #fbbf24 !important;
+}
+
+.social-post-action-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.social-readmore-btn {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%) !important;
+  color: #000000 !important;
+  font-weight: 800 !important;
+  border: none !important;
+}
+
+.social-action-btn {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #e2e8f0 !important;
+}
+
+.social-action-btn:hover {
+  border-color: #fbbf24 !important;
+  color: #fbbf24 !important;
+}
+
+.social-action-btn.wa-action:hover {
+  background: #25d366 !important;
+  border-color: #25d366 !important;
+  color: #ffffff !important;
+}
+
+/* Sidebar Recent Posts in Blog Index */
+.widget-post-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.widget-post-item:hover {
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+
+.widget-post-item h4 {
+  color: #ffffff !important;
+}
+
+.widget-post-item:hover h4 {
+  color: #fbbf24 !important;
+}
+
+.widget-post-cat {
+  color: #f59e0b !important;
+}
+
+.cat-pill {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #94a3b8 !important;
+}
+
+.cat-pill:hover {
+  border-color: rgba(245, 158, 11, 0.5) !important;
+  color: #ffffff !important;
+}
+
+.cat-pill.active {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%) !important;
+  color: #000000 !important;
+  border-color: #fbbf24 !important;
+  font-weight: 800 !important;
+}
+
+.cat-pill.active .cat-count {
+  background: rgba(0, 0, 0, 0.35) !important;
+  color: #000000 !important;
+}
+
+/* Sidebars / Community Widgets */
+.blog-sidebar-widget,
+.social-share-card,
+.recent-comments-box,
+.devotee-comment-card {
+  background: linear-gradient(165deg, #181818 0%, #101010 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.25) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  color: #ffffff !important;
+}
+
+.devotee-comment-card {
+  background: #141414 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.devotee-comment-card:hover {
+  border-color: rgba(245, 158, 11, 0.4) !important;
+}
+
+.comment-author-name {
+  color: #fbbf24 !important;
+}
+
+.comment-body {
+  color: #cbd5e1 !important;
+}
+
+/* Single Blog Page Dark Obsidian */
+.single-blog-page-wrapper {
+  background: #080808 !important;
+  color: #ffffff !important;
+}
+
+.single-blog-article {
+  background: linear-gradient(165deg, #181818 0%, #111111 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7), 0 0 25px rgba(245, 158, 11, 0.1) !important;
+  color: #ffffff !important;
+}
+
+/* Key Travel Highlights & Essential Takeaways Box */
+.single-highlights-card {
+  background: linear-gradient(165deg, #15130d 0%, #0d0c08 100%) !important;
+  border: 1.5px solid rgba(245, 158, 11, 0.45) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7), 0 0 20px rgba(245, 158, 11, 0.15) !important;
+}
+
+.highlights-header h3 {
+  color: #ffffff !important;
+  font-size: 1.35rem !important;
+  font-weight: 800 !important;
+}
+
+.sparkle-gold {
+  color: #fbbf24 !important;
+}
+
+.highlights-list li {
+  color: #e2e8f0 !important;
+  font-size: 1.02rem !important;
+  font-weight: 500 !important;
+  line-height: 1.65 !important;
+}
+
+.highlights-list li .check-icon {
+  color: #fbbf24 !important;
+}
+
+/* Quick Specifications & Route Details Box */
+.single-quickfacts-card {
+  background: linear-gradient(165deg, #161616 0%, #0e0e0e 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6) !important;
+}
+
+.quickfacts-header {
+  border-bottom: 1.5px dashed rgba(245, 158, 11, 0.3) !important;
+}
+
+.quickfacts-header h3 {
+  color: #ffffff !important;
+}
+
+.quickfact-item {
+  background: #0a0a0a !important;
+  border: 1px solid rgba(245, 158, 11, 0.25) !important;
+}
+
+.quickfact-label {
+  color: #fbbf24 !important;
+}
+
+.quickfact-value {
+  color: #ffffff !important;
+}
+
+/* Article Sections & Content in Single Blog */
+.article-section h2,
+.article-section h3 {
+  color: #ffffff !important;
+}
+
+.article-section p {
+  color: #cbd5e1 !important;
+  line-height: 1.8 !important;
+}
+
+.article-intro-lead {
+  background: rgba(245, 158, 11, 0.08) !important;
+  border-left: 4px solid #f59e0b !important;
+  color: #fef08a !important;
+}
+
+/* HELPFUL TRAVEL TIPS - Devotee Frequently Asked Questions */
+.faq-header h2 {
+  color: #ffffff !important;
+}
+
+.faq-eyebrow {
+  color: #fbbf24 !important;
+}
+
+.single-faq-item {
+  background: linear-gradient(165deg, #181818 0%, #101010 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.28) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6) !important;
+}
+
+.single-faq-item:hover,
+.single-faq-item.is-open {
+  border-color: #f59e0b !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 0 16px rgba(245, 158, 11, 0.2) !important;
+}
+
+.faq-question-row h3 {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+}
+
+.faq-chevron {
+  color: #fbbf24 !important;
+}
+
+.faq-answer-text {
+  color: #cbd5e1 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  line-height: 1.7 !important;
+}
+
+/* EXPLORE MORE GUIDES - Other Recommended Travel Blogs */
+.related-blogs-section {
+  border-top: 1px solid rgba(245, 158, 11, 0.25) !important;
+}
+
+.related-eyebrow {
+  color: #fbbf24 !important;
+}
+
+.related-header h2 {
+  color: #ffffff !important;
+}
+
+.related-blog-card {
+  background: linear-gradient(165deg, #181818 0%, #101010 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.25) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.related-blog-card:hover {
+  transform: translateY(-6px) !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85), 0 0 20px rgba(245, 158, 11, 0.22) !important;
+}
+
+.related-cat-chip {
+  background: rgba(0, 0, 0, 0.85) !important;
+  color: #fbbf24 !important;
+  border: 1px solid rgba(245, 158, 11, 0.45) !important;
+  backdrop-filter: blur(6px) !important;
+}
+
+.related-meta {
+  color: #94a3b8 !important;
+}
+
+.related-card-body h3 {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+}
+
+.related-blog-card:hover .related-card-body h3 {
+  color: #fbbf24 !important;
+}
+
+.related-card-body p {
+  color: #cbd5e1 !important;
+  line-height: 1.6 !important;
+}
+
+.related-read-link {
+  color: #fbbf24 !important;
+  font-weight: 800 !important;
+}
+
+.single-blog-article h1,
+.single-blog-article h2,
+.single-blog-article h3,
+.single-blog-article h4 {
+  color: #ffffff !important;
+}
+
+.single-blog-article p,
+.single-blog-article li {
+  color: #cbd5e1 !important;
+  line-height: 1.8 !important;
+}
+
+.single-blog-article strong {
+  color: #fef08a !important;
+}
+
+.single-blog-article blockquote {
+  background: rgba(245, 158, 11, 0.08) !important;
+  border-left: 4px solid #f59e0b !important;
+  color: #fef08a !important;
+}
+
+.single-blog-article table {
+  border-color: rgba(245, 158, 11, 0.25) !important;
+}
+
+.single-blog-article th {
+  background: #201a10 !important;
+  color: #fbbf24 !important;
+}
+
+.single-blog-article td {
+  background: #141414 !important;
+  color: #e2e8f0 !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.single-blog-breadcrumbs {
+  color: #94a3b8 !important;
+}
+
+.single-blog-breadcrumbs a {
+  color: #fbbf24 !important;
+}
+
+/* Sidebar Booking Sticky Card in Single Blog */
+.blog-booking-cta-box {
+  background: linear-gradient(165deg, #1c1810 0%, #100f0a 100%) !important;
+  border: 1.5px solid rgba(245, 158, 11, 0.4) !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7), 0 0 20px rgba(245, 158, 11, 0.18) !important;
+}
+

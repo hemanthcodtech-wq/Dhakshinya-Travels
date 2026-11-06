@@ -1,0 +1,291 @@
+/* ==========================================================================
+   GLOBAL TARIFF CARD (TOUR / DESTINATION / CAB ROUTES) - OBSIDIAN & GOLD
+   Enforces consistent luxury obsidian styling for all vehicle tariff cards
+   ========================================================================== */
+
+.tour-fleet-style-card,
+.tariff-card.tour-fleet-style-card {
+  min-width: 0 !important;
+  max-width: none !important;
+  border: 1px solid rgba(245, 158, 11, 0.28) !important;
+  border-radius: 22px !important;
+  overflow: hidden !important;
+  background: linear-gradient(165deg, #181818 0%, #0d0d0d 100%) !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  color: #ffffff !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.tour-fleet-style-card:hover,
+.tariff-card.tour-fleet-style-card:hover {
+  transform: translateY(-7px) !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8), 0 0 25px rgba(245, 158, 11, 0.22) !important;
+  border-color: #f59e0b !important;
+}
+
+.tour-fleet-style-card.featured {
+  border: 1.5px solid #f59e0b !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75), 0 0 22px rgba(245, 158, 11, 0.2) !important;
+}
+
+/* Media Box */
+.tour-vehicle-media {
+  height: 215px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background: radial-gradient(circle at 50% 50%, #262626 0%, #121212 100%) !important;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.22) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.tour-vehicle-media img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  padding: 12px !important;
+  transition: transform 0.4s ease !important;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.85)) !important;
+}
+
+.tour-fleet-style-card:hover .tour-vehicle-media img {
+  transform: scale(1.04) !important;
+}
+
+/* Top Media Category Badge */
+.tour-media-type {
+  position: absolute !important;
+  top: 12px !important;
+  left: 12px !important;
+  background: rgba(0, 0, 0, 0.82) !important;
+  backdrop-filter: blur(6px) !important;
+  color: #fbbf24 !important;
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  border-radius: 9999px !important;
+  padding: 4px 11px !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Bottom Media Overlay (Price & Seats) */
+.tour-media-bottom {
+  position: absolute !important;
+  left: 12px !important;
+  right: 12px !important;
+  bottom: 12px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.tour-media-rate {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  color: #000000 !important;
+  border-radius: 9px !important;
+  padding: 5px 12px !important;
+  font-size: 0.92rem !important;
+  font-weight: 900 !important;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4) !important;
+  letter-spacing: -0.01em !important;
+}
+
+.tour-media-seats {
+  background: rgba(0, 0, 0, 0.82) !important;
+  backdrop-filter: blur(6px) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 9px !important;
+  padding: 5px 10px !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  display: flex !important;
+  gap: 5px !important;
+  align-items: center !important;
+}
+
+.tour-media-seats svg {
+  color: #fbbf24 !important;
+}
+
+/* Info Box */
+.tour-vehicle-info {
+  padding: 1.4rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 !important;
+  background: transparent !important;
+}
+
+.tour-vehicle-heading {
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 10px !important;
+  align-items: flex-start !important;
+  margin-bottom: 0.6rem !important;
+}
+
+.tour-vehicle-subcat {
+  font-size: 0.7rem !important;
+  letter-spacing: 0.08em !important;
+  color: #f59e0b !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  display: block !important;
+  margin-bottom: 3px !important;
+}
+
+.tour-vehicle-heading h3 {
+  font-size: 1.2rem !important;
+  line-height: 1.25 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+  font-weight: 800 !important;
+}
+
+.tour-vehicle-capacity {
+  white-space: nowrap !important;
+  background: rgba(245, 158, 11, 0.12) !important;
+  color: #fef08a !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  border-radius: 8px !important;
+  padding: 4px 9px !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+}
+
+.tour-vehicle-summary {
+  font-size: 0.85rem !important;
+  line-height: 1.55 !important;
+  color: #94a3b8 !important;
+  margin: 0 0 1rem !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+/* Feature Chips */
+.tour-vehicle-features {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+  margin-bottom: 1.1rem !important;
+}
+
+.tour-vehicle-features span {
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 8px !important;
+  padding: 5px 9px !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  color: #cbd5e1 !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+
+.tour-vehicle-features svg {
+  color: #f59e0b !important;
+}
+
+/* All-Inclusive Fare Rate Box */
+.tour-vehicle-rate-pill {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: rgba(245, 158, 11, 0.07) !important;
+  border: 1px solid rgba(245, 158, 11, 0.22) !important;
+  border-radius: 12px !important;
+  padding: 0.75rem 1rem !important;
+  margin-top: auto !important;
+  margin-bottom: 1.1rem !important;
+}
+
+.rate-pill-left small {
+  display: block !important;
+  font-size: 0.65rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  color: #94a3b8 !important;
+  letter-spacing: 0.06em !important;
+}
+
+.rate-pill-left strong {
+  font-size: 1.35rem !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+}
+
+.rate-pill-badge {
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  background: rgba(34, 197, 94, 0.15) !important;
+  color: #4ade80 !important;
+  border: 1px solid rgba(34, 197, 94, 0.35) !important;
+  border-radius: 8px !important;
+  padding: 5px 9px !important;
+  font-size: 0.7rem !important;
+  font-weight: 800 !important;
+}
+
+/* Card CTA Action Buttons */
+.tour-vehicle-actions {
+  display: flex !important;
+  gap: 0.65rem !important;
+}
+
+.tour-btn-book {
+  flex: 1.2 !important;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  color: #000000 !important;
+  border: none !important;
+  padding: 0.75rem 0.6rem !important;
+  border-radius: 12px !important;
+  font-weight: 900 !important;
+  font-size: 0.88rem !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35) !important;
+}
+
+.tour-btn-book:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5) !important;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+}
+
+.tour-btn-wa {
+  flex: 0.9 !important;
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.18) 0%, rgba(22, 163, 74, 0.25) 100%) !important;
+  border: 1.5px solid #25d366 !important;
+  color: #4ade80 !important;
+  text-decoration: none !important;
+  padding: 0.75rem 0.6rem !important;
+  border-radius: 12px !important;
+  font-weight: 800 !important;
+  font-size: 0.88rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  transition: all 0.25s ease !important;
+}
+
+.tour-btn-wa:hover {
+  background: #25d366 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45) !important;
+}
+

@@ -1,0 +1,520 @@
+/* ==========================================================================
+   DHAKSHINYA TOURS & TRAVELS - DESTINATION DETAIL PAGE
+   Obsidian Black & Metallic Gold Luxury Theme
+   ========================================================================== */
+
+.dest-detail-page {
+  background: radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.08) 0%, rgba(10, 10, 10, 0.98) 60%, #050505 100%), #0a0a0a !important;
+  color: #ffffff !important;
+  font-family: inherit;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+}
+
+.dest-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Breadcrumb */
+.dest-breadcrumb {
+  background: #0d0d0d;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+  padding: 0.85rem 0;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.dest-breadcrumb .dest-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.dest-breadcrumb a {
+  color: #fbbf24;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.dest-breadcrumb a:hover {
+  color: #fef08a;
+  text-decoration: underline;
+}
+
+.dest-breadcrumb span {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.dest-breadcrumb svg {
+  color: #64748b;
+}
+
+/* Hero Section */
+.dest-hero-section {
+  position: relative;
+  color: #ffffff;
+  padding: 4.5rem 0;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.dest-hero-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.dest-eyebrow-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.dest-hero-content h1 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.dest-key-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.dest-hero-desc {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 1.6rem;
+}
+
+.dest-route-corridor {
+  background: linear-gradient(165deg, rgba(26, 26, 26, 0.8) 0%, rgba(13, 13, 13, 0.95) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.28);
+  padding: 1.1rem 1.4rem;
+  border-radius: 14px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.dest-hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Pricing Section & Vehicle Tariff Grid */
+.dest-pricing-section {
+  padding: 4.5rem 0 2.5rem;
+}
+
+.dest-detail-page .section-header {
+  text-align: center;
+  margin-bottom: 2.75rem;
+}
+
+.dest-detail-page .section-header .sub-tag {
+  color: #fbbf24;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 4px 14px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 999px;
+}
+
+.dest-detail-page .section-header h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 900;
+  color: #ffffff !important;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.dest-detail-page .section-header p {
+  color: #94a3b8 !important;
+  font-size: 1.02rem;
+  margin: 0.5rem auto 0;
+  max-width: 680px;
+  line-height: 1.6;
+}
+
+.vehicle-tariff-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem;
+}
+
+/* Main Grid: Highlights + Sidebar */
+.dest-details-main {
+  padding: 3.5rem 0;
+  border-top: 1px solid rgba(245, 158, 11, 0.18);
+}
+
+.dest-detail-page .column-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #fbbf24;
+  margin-bottom: 1.75rem;
+}
+
+.dest-detail-page .column-title h2 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #ffffff !important;
+  margin: 0;
+}
+
+.dest-detail-page .itinerary-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.dest-detail-page .timeline-item {
+  background: linear-gradient(165deg, #1c1c1c 0%, #111111 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.35) !important;
+  border-radius: 16px;
+  padding: 1.4rem 1.6rem;
+  display: flex;
+  gap: 1.4rem;
+  align-items: flex-start;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6) !important;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dest-detail-page .timeline-item:hover {
+  transform: translateX(4px);
+  border-color: #f59e0b !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.7), 0 0 16px rgba(245, 158, 11, 0.2) !important;
+}
+
+.dest-detail-page .timeline-badge {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%) !important;
+  color: #000000 !important;
+  font-weight: 900 !important;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.05em;
+  padding: 0.45rem 0.95rem;
+  border-radius: 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4) !important;
+}
+
+.dest-detail-page .timeline-content h3 {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: #ffffff !important;
+  margin-bottom: 0.45rem;
+  letter-spacing: 0.01em;
+}
+
+.dest-detail-page .timeline-content p {
+  font-size: 0.96rem;
+  color: #e2e8f0 !important;
+  line-height: 1.68;
+  margin: 0;
+  font-weight: 450;
+}
+
+.dest-detail-page .inc-exc-box {
+  background: linear-gradient(165deg, rgba(26, 26, 26, 0.92) 0%, rgba(13, 13, 13, 0.96) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 20px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
+}
+
+.dest-detail-page .inc-block h3, .dest-detail-page .exc-block h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.dest-detail-page .inc-block h3 { color: #4ade80 !important; }
+.dest-detail-page .exc-block h3 { color: #f87171 !important; }
+
+.dest-detail-page .inc-block p, .dest-detail-page .exc-block p {
+  font-size: 0.95rem;
+  color: #cbd5e1 !important;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Sidebar Widget */
+.dest-detail-page .sidebar-sticky-card {
+  position: sticky;
+  top: 100px;
+  background: linear-gradient(165deg, #181818 0%, #0d0d0d 100%);
+  border: 1.5px solid rgba(245, 158, 11, 0.35);
+  border-radius: 22px;
+  padding: 1.8rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7), 0 0 25px rgba(245, 158, 11, 0.15);
+}
+
+.dest-detail-page .card-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.dest-detail-page .sidebar-badge {
+  color: #fbbf24;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.dest-detail-page .sidebar-price small {
+  color: #94a3b8;
+  font-size: 0.82rem;
+  display: block;
+}
+
+.dest-detail-page .sidebar-price h3 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.dest-detail-page .sidebar-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.75rem;
+}
+
+.dest-detail-page .sidebar-perks div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+}
+
+.dest-detail-page .sidebar-perks div svg {
+  color: #f59e0b;
+  flex-shrink: 0;
+}
+
+.dest-detail-page .sidebar-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.dest-detail-page .sidebar-wa-btn {
+  background: linear-gradient(135deg, #25d366 0%, #16a34a 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 0.85rem;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 0.92rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+  transition: all 0.25s ease;
+}
+
+.dest-detail-page .sidebar-wa-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+  color: #ffffff;
+}
+
+.dest-detail-page .sidebar-pay-btn {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #000000;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 12px;
+  font-weight: 900;
+  font-size: 0.92rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
+  transition: all 0.25s ease;
+}
+
+.dest-detail-page .sidebar-pay-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+}
+
+.dest-detail-page .sidebar-call-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+}
+
+.dest-detail-page .sidebar-call-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fbbf24;
+  color: #fbbf24;
+}
+
+/* FAQ Section */
+.dest-faq-section {
+  padding: 4rem 0;
+  background: transparent;
+  border-top: 1px solid rgba(245, 158, 11, 0.18);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.18);
+  margin-top: 3rem;
+}
+
+.dest-detail-page .faq-list {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.dest-detail-page .faq-item {
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  background: linear-gradient(165deg, rgba(26, 26, 26, 0.92) 0%, rgba(13, 13, 13, 0.96) 100%);
+  border-radius: 16px;
+  padding: 1.3rem 1.6rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.dest-detail-page .faq-item:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), 0 0 18px rgba(245, 158, 11, 0.15);
+}
+
+.dest-detail-page .faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+  font-size: 1.08rem;
+  color: #ffffff;
+}
+
+.dest-detail-page .faq-question svg {
+  color: #f59e0b;
+}
+
+.dest-detail-page .faq-answer {
+  margin-top: 0.95rem;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.vehicle-logo-tag {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 8px;
+  padding: 3px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+
+.vehicle-logo-tag img {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .vehicle-tariff-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .dest-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+  .sidebar-sticky-card {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .vehicle-tariff-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem;
+  }
+  .dest-hero-content h1 {
+    font-size: 1.8rem;
+  }
+}
