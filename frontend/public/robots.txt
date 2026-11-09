@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://taxi-in-tirupati.com/sitemap.xml
+Sitemap: https://www.dhakshinyatourandtravels.in/sitemap.xml

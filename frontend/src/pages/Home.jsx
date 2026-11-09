@@ -234,7 +234,7 @@ export default function Home() {
       },
       {
         '@type': 'BreadcrumbList',
-        itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://taxi-in-tirupati.com/' }]
+        itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.dhakshinyatourandtravels.in/' }]
       }
     ]
   };

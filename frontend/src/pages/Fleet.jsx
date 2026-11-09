@@ -173,13 +173,13 @@ export default function Fleet() {
       <SEO
         title="Cab Fleet & Vehicle Rental Tariff in Tirupati | Taxi in Tirupati"
         description="View our clean AC vehicle fleet: Sedans, Ertiga, Innova Crysta, Fortuner, Tempo Travellers, Force Urbania and luxury buses with transparent rate cards."
-        canonical="https://taxi-in-tirupati.com/fleet"
+        canonical="https://www.dhakshinyatourandtravels.in/fleet"
         schema={{
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://taxi-in-tirupati.com/' },
-            { '@type': 'ListItem', position: 2, name: 'Fleet', item: 'https://taxi-in-tirupati.com/fleet' }
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.dhakshinyatourandtravels.in/' },
+            { '@type': 'ListItem', position: 2, name: 'Fleet', item: 'https://www.dhakshinyatourandtravels.in/fleet' }
           ]
         }}
       />

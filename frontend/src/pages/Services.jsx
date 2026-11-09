@@ -38,13 +38,13 @@ export default function Services(){
     <SEO
       title="Travel Services & Vehicle Rental Packages | Taxi in Tirupati"
       description="Comprehensive travel services in Tirupati: Local 8h/80km packages, Balaji Darshan tours, corporate travel, weddings, and customized pilgrimage itineraries."
-      canonical="https://taxi-in-tirupati.com/services"
+      canonical="https://www.dhakshinyatourandtravels.in/services"
       schema={{
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://taxi-in-tirupati.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://taxi-in-tirupati.com/services' }
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.dhakshinyatourandtravels.in/' },
+          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.dhakshinyatourandtravels.in/services' }
         ]
       }}
     />

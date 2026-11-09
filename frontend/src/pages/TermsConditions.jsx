@@ -11,7 +11,7 @@ export default function TermsConditions() {
       <SEO
         title="Terms and Conditions – Dhakshinya Tours & Travels"
         description="Read the official booking terms, vehicle usage rules, payment guidelines, and driver dispatch conditions for Dhakshinya Tours & Travels."
-        canonical="https://taxi-in-tirupati.com/terms-and-conditions"
+        canonical="https://www.dhakshinyatourandtravels.in/terms-and-conditions"
       />
       <div className="legal-hero">
         <span className="legal-badge">OFFICIAL TERMS OF SERVICE</span>

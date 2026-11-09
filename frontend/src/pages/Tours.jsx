@@ -136,13 +136,13 @@ export default function Tours() {
       <SEO
         title="Tirupati Tour Packages – Temple Pilgrimage & South India Cab Tours"
         description="Book 1-day to 7-day Tirupati tour packages for Tirumala darshan, Srikalahasti, Kanipakam, Arunachalam, Madurai & South India temple circuits. Private AC cabs with driver."
-        canonical="https://taxi-in-tirupati.com/tours"
+        canonical="https://www.dhakshinyatourandtravels.in/tours"
         schema={{
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://taxi-in-tirupati.com/' },
-            { '@type': 'ListItem', position: 2, name: 'Tours', item: 'https://taxi-in-tirupati.com/tours' }
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.dhakshinyatourandtravels.in/' },
+            { '@type': 'ListItem', position: 2, name: 'Tours', item: 'https://www.dhakshinyatourandtravels.in/tours' }
           ]
         }}
       />

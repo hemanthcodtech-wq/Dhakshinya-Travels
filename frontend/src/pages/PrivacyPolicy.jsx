@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
       <SEO
         title="Privacy Policy – Dhakshinya Tours & Travels"
         description="Review the official Privacy Policy of Dhakshinya Tours & Travels. We are committed to safeguarding your personal data, booking details, and privacy."
-        canonical="https://taxi-in-tirupati.com/privacy-policy"
+        canonical="https://www.dhakshinyatourandtravels.in/privacy-policy"
       />
       <div className="legal-hero">
         <span className="legal-badge">100% SECURE & CONFIDENTIAL</span>

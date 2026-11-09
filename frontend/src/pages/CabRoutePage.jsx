@@ -423,9 +423,9 @@ export default function CabRoutePage({ route: routeProp }) {
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://taxi-in-tirupati.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Tirupati Cabs', item: 'https://taxi-in-tirupati.com/cabs' },
-          { '@type': 'ListItem', position: 3, name: route.title, item: `https://taxi-in-tirupati.com/tirupati-cabs/${route.slug}` }
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.dhakshinyatourandtravels.in/' },
+          { '@type': 'ListItem', position: 2, name: 'Tirupati Cabs', item: 'https://www.dhakshinyatourandtravels.in/cabs' },
+          { '@type': 'ListItem', position: 3, name: route.title, item: `https://www.dhakshinyatourandtravels.in/tirupati-cabs/${route.slug}` }
         ]
       }
     ]

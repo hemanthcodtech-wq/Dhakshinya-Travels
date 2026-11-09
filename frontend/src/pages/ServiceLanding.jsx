@@ -470,8 +470,8 @@ export default function ServiceLanding({ slug: routeSlug }) {
             {
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://taxi-in-tirupati.com/' },
-                { '@type': 'ListItem', position: 2, name: data.title, item: `https://taxi-in-tirupati.com/${slug}` }
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.dhakshinyatourandtravels.in/' },
+                { '@type': 'ListItem', position: 2, name: data.title, item: `https://www.dhakshinyatourandtravels.in/${slug}` }
               ]
             }
           ]

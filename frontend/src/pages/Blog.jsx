@@ -82,7 +82,7 @@ export default function Blog({ post: propPost, slug: propSlug }) {
       <SEO
         title={`${currentPost.title} | Dhakshinya Tours & Travels`}
         description={currentPost.snippet || currentPost.intro || `Read about ${currentPost.title} on Dhakshinya Tours & Travels travel journal.`}
-        canonical={`https://taxi-in-tirupati.com/${currentPost.slug}`}
+        canonical={`https://www.dhakshinyatourandtravels.in/${currentPost.slug}`}
         ogImage={currentPost.image || images.temple}
         schema={{
           '@context': 'https://schema.org',

@@ -42,13 +42,13 @@ export default function Cabs() {
       <SEO
         title="Tirupati Cabs Service – Book Outstation & Local Taxi | Taxi in Tirupati"
         description="Explore verified Tirupati cab routes to Srikalahasti, Kanipakam, Vellore, Arunachalam, Chennai, Bangalore and Tirumala. Clean AC cabs with transparent tariffs."
-        canonical="https://taxi-in-tirupati.com/cabs"
+        canonical="https://www.dhakshinyatourandtravels.in/cabs"
         schema={{
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://taxi-in-tirupati.com/' },
-            { '@type': 'ListItem', position: 2, name: 'Tirupati Cabs', item: 'https://taxi-in-tirupati.com/cabs' }
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.dhakshinyatourandtravels.in/' },
+            { '@type': 'ListItem', position: 2, name: 'Tirupati Cabs', item: 'https://www.dhakshinyatourandtravels.in/cabs' }
           ]
         }}
       />

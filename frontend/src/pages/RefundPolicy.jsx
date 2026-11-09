@@ -11,7 +11,7 @@ export default function RefundPolicy() {
       <SEO
         title="Refund & Cancellation Policy – Dhakshinya Tours & Travels"
         description="Learn about our transparent refund and cancellation guidelines for cab and tour package bookings with Dhakshinya Tours & Travels."
-        canonical="https://taxi-in-tirupati.com/refund-and-cancellation-policy"
+        canonical="https://www.dhakshinyatourandtravels.in/refund-and-cancellation-policy"
       />
       <div className="legal-hero">
         <span className="legal-badge">OFFICIAL REFUND POLICY</span>

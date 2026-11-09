@@ -25,6 +25,8 @@ const allowedOrigins = (process.env.CORS_ORIGIN || '')
 const defaultOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
+  'https://www.dhakshinyatourandtravels.in',
+  'https://dhakshinyatourandtravels.in',
   'https://dhakshinya-travels.vercel.app',
   'https://balaji-travels-six.vercel.app'
 ];

@@ -50,7 +50,7 @@ export default function VehicleDetails() {
       <SEO
         title={`${name} Rental in Tirupati – Tariffs & Bookings | Taxi in Tirupati`}
         description={`Rent ${name} in Tirupati for local 8h/80km sightseeing, outstation pilgrimage tours and Tirupati airport transfers. Starting local fare: ${cleanPrice(local) || '₹2,880'}. Sanitised AC vehicle.`}
-        canonical={`https://taxi-in-tirupati.com/fleet/${vehicleId}`}
+        canonical={`https://www.dhakshinyatourandtravels.in/fleet/${vehicleId}`}
         ogImage={image}
         schema={{
           '@context': 'https://schema.org',

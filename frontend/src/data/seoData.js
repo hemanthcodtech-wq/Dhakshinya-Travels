@@ -1,6 +1,6 @@
 export const defaultSEO = {
   siteName: 'Dhakshinya Tours & Travels',
-  domain: 'https://taxi-in-tirupati.com',
+  domain: 'https://www.dhakshinyatourandtravels.in',
   defaultImage: 'https://res.cloudinary.com/znbhjevm/image/upload/f_auto,q_auto,w_1200/v1786735401/33e36867-e1e5-4785-bbf1-8255a659662e.png',
   defaultTitle: 'Dhakshinya Tours & Travels – 24/7 Tirupati Cab Service & Tour Packages',
   defaultDescription: 'Book reliable taxi service in Tirupati with Dhakshinya Tours & Travels. 24/7 verified AC cabs for Tirumala darshan, airport pickup, outstation trips & South India temple tours.'
