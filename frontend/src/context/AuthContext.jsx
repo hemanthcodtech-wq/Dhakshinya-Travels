@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect } from 'react';
 
 const AuthContext = createContext();
 
-const API_BASE = import.meta.env?.VITE_BACKEND_URL || 'https://api.taxi-in-tirupati.com/api';
+const API_BASE = import.meta.env?.VITE_BACKEND_URL || 'https://dhakshinya-travels-ju2b.vercel.app/api';
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(() => {

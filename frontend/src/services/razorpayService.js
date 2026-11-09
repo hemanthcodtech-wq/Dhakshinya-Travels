@@ -1,5 +1,6 @@
+
 const BACKEND_API_BASE = import.meta.env?.VITE_BACKEND_URL 
-  || (window.location.hostname === 'localhost' ? 'http://localhost:5000/api' : 'https://api.taxi-in-tirupati.com/api');
+  || (window.location.hostname === 'localhost' ? 'http://localhost:5000/api' : 'https://dhakshinya-travels-ju2b.vercel.app/api');
 
 /**
  * Initiates Razorpay Order Creation on Backend

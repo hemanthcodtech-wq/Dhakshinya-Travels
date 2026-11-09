@@ -25,6 +25,7 @@ const allowedOrigins = (process.env.CORS_ORIGIN || '')
 const defaultOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
+  'https://dhakshinya-travels.vercel.app',
   'https://balaji-travels-six.vercel.app'
 ];
 
@@ -42,7 +43,7 @@ app.use(cors({
       return callback(null, true);
     }
     // Also allow any preview deployments on Vercel
-    if (/^https:\/\/balaji-travels.*\.vercel\.app$/.test(origin)) {
+    if (/^https:\/\/dhakshinya-travels.*\.vercel\.app$/.test(origin) || /^https:\/\/balaji-travels.*\.vercel\.app$/.test(origin)) {
       return callback(null, true);
     }
     return callback(null, true); // Fallback to permissive for safe API access
