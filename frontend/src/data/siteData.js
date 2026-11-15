@@ -27,7 +27,7 @@ export const whatsappChat = (context = '') => {
   const closing = `\n\nCould you please help me with availability and pricing?`;
   return `${whatsapp}?text=${encodeURIComponent(base + contextLine + closing)}`;
 };
-export const email = 'booking@taxi-in-tirupati.com';
+export const email = 'dhakshinya55@gmail.com';
 
 export const images = {
   hero: '/images/hero-bus-dhakshinya.jpg',
