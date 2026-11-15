@@ -45,7 +45,7 @@ export default function AdminLogin() {
           <div className="admin-brand-icon">
             <ShieldCheck size={32} />
           </div>
-          <h2>Tirupati Balaji Admin</h2>
+          <h2>Admin Login</h2>
           <p>Control Center & Portal Management</p>
         </div>
 
