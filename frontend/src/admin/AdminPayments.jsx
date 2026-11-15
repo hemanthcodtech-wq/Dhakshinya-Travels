@@ -16,7 +16,7 @@ export default function AdminPayments() {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
             <span style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '1px', textTransform: 'uppercase', opacity: 0.9 }}>
-              EASEBUZZ PAYMENT GATEWAY LOGS
+              Razorpay PAYMENT GATEWAY LOGS
             </span>
             <h2 style={{ color: '#fff', margin: '0.25rem 0 0 0', fontSize: '1.4rem' }}>
               Total Online Collections: ₹{totalCollected.toLocaleString('en-IN')}
@@ -24,7 +24,7 @@ export default function AdminPayments() {
           </div>
           <div style={{ background: 'rgba(255,255,255,0.15)', padding: '0.5rem 1rem', borderRadius: 10, backdropFilter: 'blur(8px)', fontSize: '0.85rem' }}>
             <ShieldCheck size={16} style={{ display: 'inline', marginRight: 6, verticalAlign: 'middle' }} />
-            Active Gateway: <strong>EASEBUZZ ONLINE</strong>
+            Active Gateway: <strong>Razorpay ONLINE</strong>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@ export default function AdminPayments() {
       <div className="admin-card">
         <div className="card-top-bar">
           <div>
-            <h2>Easebuzz Transactions History ({payments.length})</h2>
+            <h2>Razorpay Transactions History ({payments.length})</h2>
             <p style={{ color: 'var(--admin-text-muted)', fontSize: '0.85rem', margin: '0.2rem 0 0 0' }}>
               Real-time records of advance token payments and online cab bookings
             </p>

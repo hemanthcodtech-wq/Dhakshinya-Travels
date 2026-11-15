@@ -122,7 +122,7 @@ export default function AdminDashboard() {
         {/* Recent Easebuzz Transactions */}
         <div className="admin-card">
           <div className="card-top-bar">
-            <h2>Easebuzz Payment History</h2>
+            <h2>Razorpay Payment History</h2>
             <Link to="/admin/payments" style={{ color: 'var(--admin-primary)', fontSize: '0.85rem', fontWeight: 700, textDecoration: 'none' }}>
               View All Logs →
             </Link>
