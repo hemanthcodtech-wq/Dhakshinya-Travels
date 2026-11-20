@@ -5,18 +5,19 @@ import { defaultSEO, staticPageSEO } from '../data/seoData';
 /**
  * SEO manager component that dynamically sets:
  * - document.title
- * - meta[name="description"]
- * - meta[name="keywords"]
+ * - meta[name="description"], meta[name="keywords"]
  * - link[rel="canonical"]
- * - og:title, og:description, og:url, og:image
+ * - og:title, og:description, og:url, og:image, og:locale, og:image:alt
  * - twitter:title, twitter:description, twitter:image
  * - JSON-LD Schema (LocalBusiness, FAQPage, TouristAttraction, BreadcrumbList)
  */
 export default function SEO({
   title,
   description,
+  keywords,
   canonical,
   ogImage,
+  ogImageAlt,
   ogType = 'website',
   schema
 }) {
@@ -26,14 +27,15 @@ export default function SEO({
 
   const resolvedTitle = title || staticMeta.title || defaultSEO.defaultTitle;
   const resolvedDesc = description || staticMeta.description || defaultSEO.defaultDescription;
+  const resolvedKeywords = keywords || staticMeta.keywords || defaultSEO.defaultKeywords;
   const resolvedCanonical = canonical || `${defaultSEO.domain}${path === '/' ? '' : path}`;
   const resolvedImage = ogImage || defaultSEO.defaultImage;
+  const resolvedImageAlt = ogImageAlt || resolvedTitle;
 
   useEffect(() => {
     // 1. Title
     document.title = resolvedTitle;
 
-    // Helper to set or create meta tag
     const setMeta = (attr, key, content) => {
       if (!content) return;
       let el = document.querySelector(`meta[${attr}="${key}"]`);
@@ -47,7 +49,9 @@ export default function SEO({
 
     // 2. Standard Meta
     setMeta('name', 'description', resolvedDesc);
+    setMeta('name', 'keywords', resolvedKeywords);
     setMeta('name', 'author', defaultSEO.siteName);
+    setMeta('name', 'robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
 
     // 3. Canonical Link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -65,18 +69,19 @@ export default function SEO({
     setMeta('property', 'og:description', resolvedDesc);
     setMeta('property', 'og:url', resolvedCanonical);
     setMeta('property', 'og:image', resolvedImage);
+    setMeta('property', 'og:image:alt', resolvedImageAlt);
+    setMeta('property', 'og:locale', 'en_IN');
 
     // 5. Twitter Card
     setMeta('name', 'twitter:card', 'summary_large_image');
     setMeta('name', 'twitter:title', resolvedTitle);
     setMeta('name', 'twitter:description', resolvedDesc);
     setMeta('name', 'twitter:image', resolvedImage);
+    setMeta('name', 'twitter:image:alt', resolvedImageAlt);
 
     // 6. Dynamic JSON-LD injection
     const existingDynamicScript = document.getElementById('dynamic-jsonld');
-    if (existingDynamicScript) {
-      existingDynamicScript.remove();
-    }
+    if (existingDynamicScript) existingDynamicScript.remove();
 
     if (schema) {
       const script = document.createElement('script');
@@ -90,7 +95,7 @@ export default function SEO({
       const cleanupScript = document.getElementById('dynamic-jsonld');
       if (cleanupScript) cleanupScript.remove();
     };
-  }, [resolvedTitle, resolvedDesc, resolvedCanonical, resolvedImage, ogType, schema]);
+  }, [resolvedTitle, resolvedDesc, resolvedKeywords, resolvedCanonical, resolvedImage, resolvedImageAlt, ogType, schema]);
 
   return null;
 }

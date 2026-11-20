@@ -2,5 +2,17 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /api/
+Disallow: /payment-status
 
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+Host: https://www.dhakshinyatourandtravels.in
 Sitemap: https://www.dhakshinyatourandtravels.in/sitemap.xml

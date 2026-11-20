@@ -80,29 +80,61 @@ export default function Blog({ post: propPost, slug: propSlug }) {
       image={currentPost.image || images.temple}
     >
       <SEO
-        title={`${currentPost.title} | Dhakshinya Tours & Travels`}
-        description={currentPost.snippet || currentPost.intro || `Read about ${currentPost.title} on Dhakshinya Tours & Travels travel journal.`}
+        title={`${currentPost.title} | Car Travels in Tirupati – Dhakshinya`}
+        description={currentPost.snippet || `Read about ${currentPost.title} – expert car travels guide by Dhakshinya Tours & Travels, Tirupati.`}
+        keywords={currentPost.tags ? `${currentPost.tags.join(', ')}, car travels in tirupati, tirupati car travels, tirupathi car travels, taxi in tirupati` : undefined}
         canonical={`https://www.dhakshinyatourandtravels.in/${currentPost.slug}`}
         ogImage={currentPost.image || images.temple}
-        schema={{
-          '@context': 'https://schema.org',
-          '@type': 'Article',
-          headline: currentPost.title,
-          description: currentPost.snippet,
-          image: currentPost.image || images.temple,
-          author: {
-            '@type': 'Organization',
-            name: 'Dhakshinya Tours & Travels'
-          },
-          publisher: {
-            '@type': 'Organization',
-            name: 'Dhakshinya Tours & Travels',
-            logo: {
-              '@type': 'ImageObject',
-              url: 'https://res.cloudinary.com/znbhjevm/image/upload/f_auto,q_auto,w_800/v1786735401/33e36867-e1e5-4785-bbf1-8255a659662e.png'
+        ogImageAlt={currentPost.title}
+        ogType="article"
+        schema={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: currentPost.title,
+            description: currentPost.snippet,
+            image: currentPost.image || images.temple,
+            datePublished: currentPost.date,
+            dateModified: currentPost.date,
+            wordCount: currentPost.fullContent?.sections?.reduce((acc, s) => acc + (s.text?.split(' ').length || 0), 0) || 500,
+            author: {
+              '@type': 'Organization',
+              name: 'Dhakshinya Tours & Travels',
+              url: 'https://www.dhakshinyatourandtravels.in'
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'Dhakshinya Tours & Travels',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://res.cloudinary.com/znbhjevm/image/upload/f_auto,q_auto,w_800/v1786735401/33e36867-e1e5-4785-bbf1-8255a659662e.png'
+              }
+            },
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': `https://www.dhakshinyatourandtravels.in/${currentPost.slug}`
             }
+          },
+          ...(currentPost.faqs && currentPost.faqs.length > 0 ? [{
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: currentPost.faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }] : []),
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.dhakshinyatourandtravels.in/' },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.dhakshinyatourandtravels.in/blog' },
+              { '@type': 'ListItem', position: 3, name: currentPost.category, item: `https://www.dhakshinyatourandtravels.in/blog` },
+              { '@type': 'ListItem', position: 4, name: currentPost.shortTitle || currentPost.title, item: `https://www.dhakshinyatourandtravels.in/${currentPost.slug}` }
+            ]
           }
-        }}
+        ]}
       />
       <div className="single-blog-page-wrapper">
         <article className="single-blog-article">

@@ -106,17 +106,44 @@ export default function BlogIndex() {
   return (
     <div className="blog-social-wrapper">
       <SEO
-        title="Dhakshinya Tours & Travels Blog – Pilgrimage Guides & Temple Tips"
-        description="Read expert Tirupati travel guides, temple darshan tips, cab distance charts and South India pilgrimage insights from Dhakshinya Tours & Travels."
-        canonical="/blog"
-        schema={{
-          '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.dhakshinyatourandtravels.in/' },
-            { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.dhakshinyatourandtravels.in/blog' }
-          ]
-        }}
+        title="Car Travels in Tirupati – Travel Blog & Pilgrimage Guides | Dhakshinya"
+        description="Read expert car travels guides for Tirupati, temple darshan tips, cab distance charts and South India pilgrimage insights from Dhakshinya Tours & Travels – #1 car travels in Tirupati."
+        keywords="car travels in tirupati blog, tirupati car travels guide, tirupati pilgrimage tips, tirumala darshan guide, tirupati temple guide, tirupati cab tips, tirupathi car travels"
+        canonical="https://www.dhakshinyatourandtravels.in/blog"
+        schema={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.dhakshinyatourandtravels.in/' },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.dhakshinyatourandtravels.in/blog' }
+            ]
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Blog',
+            name: 'Dhakshinya Tours & Travels – Car Travels in Tirupati Blog',
+            description: 'Expert pilgrimage guides, car travels tips, temple darshan insights and South India road trip guides from Dhakshinya Tours & Travels.',
+            url: 'https://www.dhakshinyatourandtravels.in/blog',
+            publisher: {
+              '@type': 'Organization',
+              name: 'Dhakshinya Tours & Travels',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://res.cloudinary.com/znbhjevm/image/upload/f_auto,q_auto,w_800/v1786735401/33e36867-e1e5-4785-bbf1-8255a659662e.png'
+              }
+            },
+            blogPost: allBlogs.slice(0, 10).map(post => ({
+              '@type': 'BlogPosting',
+              headline: post.title,
+              description: post.snippet,
+              url: `https://www.dhakshinyatourandtravels.in/${post.slug}`,
+              datePublished: post.date,
+              image: post.image,
+              author: { '@type': 'Organization', name: 'Dhakshinya Tours & Travels' }
+            }))
+          }
+        ]}
       />
       {/* --- HERO BANNER --- */}
       <section className="blog-hero-card">
