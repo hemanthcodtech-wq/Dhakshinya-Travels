@@ -58,10 +58,10 @@ const moreNavLinks = [
 ];
 
 const socialLinks = [
-  { name: 'Facebook', url: 'https://www.facebook.com/tirupatibalajitourstravel', Icon: FaFacebookF },
-  { name: 'Twitter', url: 'https://x.com/tirupati_tours', Icon: FaXTwitter },
-  { name: 'Instagram', url: 'https://www.instagram.com/tirupatibalajitourstravel', Icon: FaInstagram },
-  { name: 'YouTube', url: 'https://www.youtube.com/@tirupatibalajitourstravel', Icon: FaYoutube },
+  { name: 'Facebook', url: 'https://www.facebook.com/dhakshinya', Icon: FaFacebookF },
+  { name: 'Twitter', url: 'https://x.com/dhakshinya_tours', Icon: FaXTwitter },
+  { name: 'Instagram', url: 'https://www.instagram.com/dhakshinya_tours', Icon: FaInstagram },
+  { name: 'YouTube', url: 'https://www.youtube.com/@dhakshinya_tours', Icon: FaYoutube },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/chandra-sekhar-59aa502b9', Icon: FaLinkedinIn }
 ];
 

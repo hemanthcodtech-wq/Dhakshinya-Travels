@@ -168,7 +168,7 @@ export const servicePages = {
       ['Premium Taxi', 'Higher-end sedan and SUV options for events and VIP transfers.'],
       ['Local Sightseeing', 'Flexible temple and attraction tours with knowledgeable drivers.'],
       ['Airport Transfers', 'On-time airport pickup and drop support.'],
-      ['Temple Darshan', 'Comfortable rides for Tirupati Balaji and nearby temples.']
+      ['Temple Darshan', 'Comfortable rides for Tirumala Balaji and nearby temples.']
     ],
     packageNote: 'Choose the service type, vehicle and route and request the current fare before booking.',
     steps: commonSteps,

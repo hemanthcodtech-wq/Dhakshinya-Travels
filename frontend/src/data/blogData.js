@@ -297,7 +297,7 @@ export const blogPosts = [
         },
         {
           heading: '2. Comprehensive Pilgrimage & Tour Packages',
-          text: 'From 1-Day Tirupati Balaji Darshan packages to multi-day South India temple tours (covering Srikalahasti, Kanipakam, Vellore Golden Temple, Thiruttani, and Pondicherry), we offer customized itineraries for every budget.'
+          text: 'From 1-Day Tirumala Darshan packages to multi-day South India temple tours (covering Srikalahasti, Kanipakam, Vellore Golden Temple, Thiruttani, and Pondicherry), we offer customized itineraries for every budget.'
         },
         {
           heading: '3. Fleet Maintenance & Passenger Safety',

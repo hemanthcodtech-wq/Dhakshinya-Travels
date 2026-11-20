@@ -130,7 +130,7 @@ export default function Tours() {
     <Page
       eyebrow="PILGRIMAGE & TOUR PACKAGES"
       title="Curated Journeys of Faith & Discovery."
-      text="Book private cab tour packages for Tirupati Balaji darshan, temple circuits across Andhra Pradesh & Tamil Nadu, and customized South India holiday getaways."
+      text="Book private cab tour packages for Tirupati darshan, temple circuits across Andhra Pradesh & Tamil Nadu, and customized South India holiday getaways."
       image={images.hero}
     >
       <SEO

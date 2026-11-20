@@ -53,7 +53,7 @@ export default function AdminLayout() {
             <ShieldCheck size={22} />
           </div>
           <div className="sidebar-title">
-            Tirupati Balaji
+            Dhakshinya
             <small>Admin Panel</small>
           </div>
           <button 
